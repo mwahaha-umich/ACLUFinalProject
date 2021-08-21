@@ -5,9 +5,9 @@
 
 ## Getting Started
 ### We will start by creating a parent folder called "ACLU". We then create 3 folder paths:
-"ACLUData" --> 25 files on 3 outreach campaigns
-"WorkingFiles" --> after running the code, outputs are saved here
-"AdditionalData" --> external data sources
+1. "ACLUData" --> 25 files on 3 outreach campaigns
+2. "WorkingFiles" --> after running the code, outputs are saved here
+3. "AdditionalData" --> external data sources
 
 ### ACLUData
 #### We have uploaded a sample of each of the 25 files we have recieved from the ACLU of Michigan which are files on 3 of their Outreach Campaigns in 2020: 
