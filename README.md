@@ -32,9 +32,13 @@ And then you are good to go to get started!
 ## Requirements
 ### Please run the requirements files for each of the notebooks.
 Example: 
-pip install -r requirements.txt
+
 ACLU Python Part 1: 
+pip install -r part_1requirements.txt
+
 ACLU Python Part 2: 
+pip install -r part_2requirements.txt
+
 ACLU Dashbaord 1: 
 ACLU Spark: 
 ACLU Spark Dashboard: 
@@ -49,15 +53,15 @@ We wanted to include some of our earlier renditions of our code and how we got s
 The main outputs of this file would be: 
 1. dfVoters --> all demographic and location data of the voters with the primary key of the Voter File VANID. 
 2. dfOutreach --> all outreach data so communication type, for which campaign, with the primary key of the Voter File VANID. 
-3. dfMerged --> a gigantic dataframe combining election data with campaign data with the primary key of Voter File VANID
+3. dfMerged --> all election data with the primary key of Voter File VANID
 
 ### Python Part 2
 #### This notebook is primarily manipulating our output of dfMerged to a file we called dfReshapedUnique, which is a row-based view of all the election data. It creates the view of Voter File VANID, Election Type, Year, and Participation. The primary key is Voter File VANID but as you can tell, there will be multiple rows for each unique voter depending on election and year they have voted in. In terms of the participation column we have A for Absentee ballot, P for Polls (if there is a D or R, that is specifying which party they voted during the primary), Y for Yes indicating that they voted, but we don’t have data on how they voted (in person vs. absentee), and lastly M this one we tried to get more information on but are not entirely sure, the most wegot was that this probably means they voted in a Municipal election. 
 
 Input: 
-dfMerged --> a gigantic dataframe combining election data with campaign data with the primary key of Voter File VANID
+dfMerged --> all election data with the primary key of Voter File VANID
 Output: 
-dfReshapedUnique --> dataframe of how each voter we have reached out to in the 3 campaigns has voted throughout time. 
+dfReshapedUnique --> dataframe of how each voter we have reached out to in the 3 campaigns has voted throughout time. same as dfMerged just more user friendly
 
 ### Python Dashboard
 #### Here we are using our four files (dfVoters, dfOutreach, dfMerged, and dfReshapedUnique) to create various visualizations. Before we create our plotly dash, we have created each dataframe and outputted the data into a csv file to be able to delete our larger input files and conserve memory & RAM. We also leveraged ngrok to create our plotly dash in collab. 
