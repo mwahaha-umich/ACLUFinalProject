@@ -8,6 +8,7 @@
 1. Oakland County Prosecutor Race (oakland)
 2. Supreme Court of Michigan Race (scomi)
 3. Statewide voting rights/voter education race (lpv)
+
 You will need to download all of these .csv files and save them to a folder called "WorkingFiles". 
 
 Next, we have a couple of various external data sources that helped us with this analysis such as geojson files of Michigan, and all registered voters in the state of Michigan by county. These will need to be saved to a folder called "AdditionalFiles". 
@@ -18,4 +19,12 @@ You can open the workbooks in Collab, we created a parent folder called "ACLU" t
 And then you are good to go to get started!
 
 ## Requirements
-### 
+### Please run the requirements files for each of the notebooks.
+Example: 
+pip install -r requirements.txt
+ACLU Python Part 1: 
+ACLU Python Part 2: 
+ACLU Dashbaord 1: 
+ACLU Spark: 
+ACLU Spark Dashboard: 
+Clustering: 
