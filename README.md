@@ -54,6 +54,13 @@ Anupriya Dashboard Spark2.ipynb (ACLU Spark Dashboard):
 'pip install -r spark_dashboard_requirements.txt'
 ```
 Clustering: 
+```
+pip install -r clustering_requirements.txt
+```
+Waffle Charts: 
+```
+pip install -r waffle_requirements.txt
+```
 
 ## Descriptions of Code Files
 We wanted to include some of our earlier renditions of our code and how we got started. We began with using pandas to transform our raw files but quickly realized that it was extremely time consuming due to the size of our files. We started with pandas so that we could at least start building visualizations for the dashboard, we were then able to determine the level of aggregation that would be needed to create our visualizations. We started saving these dataframes as smaller files to increase performance. Lastly, we then took everything to Spark which allowed us to handle our datasets without constantly crashing in Collab. Thus, you will find our first renditions of the dashboard via pandas and then our final version using Spark. 
@@ -85,3 +92,6 @@ dfReshapedUnique --> dataframe of how each voter we have reached out to in the 3
 
 ### Clustering
 #### This notebook uses K-modes clustering to group Michigan voters based on several demographic characteristics (e.g. sex, race, zip code) and their voting behavior in the past four presidential elections.
+
+### Waffle Charts
+#### This notebook creates waffle charts to visualize how effective different communication methods were in turning out the vote for three ACLU-MI campaigns: Let People Vote, SCOMI, and Oakland County Prosecutor.
