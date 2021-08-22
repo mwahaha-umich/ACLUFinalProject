@@ -73,4 +73,6 @@ dfReshapedUnique --> dataframe of how each voter we have reached out to in the 3
 #### This is our final version of the Dashboard leveraging our Spark pipeline. 
 
 ### Clustering
-#### Mackenzie to fill in here. 
+#### Rather than forcing the use of advanced machine learning models to add complexity to our project, we stayed focused on what would be most useful to our client. The ACLU-MI was interested in understanding how registered voters in Michigan are similar and different from each other, which we interpreted as a clustering problem. 
+
+Because all of our data was categorical, we decided to use the K-modes clustering method. We first tried encoding the categorical variables so we could run PCA and K-means, but the results didn’t make much sense because the models assumed an order where there was none. K-modes worked fairly well, but it wasn’t able to handle our large dataset. As a result, we randomly selected two million Michigan voters and narrowed our feature set down to include several demographic characteristics such as sex, race, and zip code in combination with voting behavior in the past four presidential elections. Our analysis showed that there are five distinct groups of voters within the population. 
