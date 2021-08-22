@@ -42,13 +42,17 @@ ACLU Python Part 2:
 pip install -r part_2requirements.txt
 ```
 ACLU Dashbaord 1: 
-
+```
+pip install -r dashboard_requirements.txt
+```
 ACLU Spark: 
 ```
 'pip install -r spark_requirements.txt'
 ```
 ACLU Spark Dashboard: 
-
+```
+'pip install -r spark_dashboard_requirements.txt'
+```
 Clustering: 
 
 ## Descriptions of Code Files
