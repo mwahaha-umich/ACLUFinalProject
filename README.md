@@ -34,14 +34,18 @@ And then you are good to go to get started!
 Example: 
 
 ACLU Python Part 1: 
-pip install -r part_1requirements.txt
+'pip install -r part_1requirements.txt'
 
 ACLU Python Part 2: 
-pip install -r part_2requirements.txt
+'pip install -r part_2requirements.txt'
 
 ACLU Dashbaord 1: 
+
 ACLU Spark: 
+'pip install -r spark_requirements.txt'
+
 ACLU Spark Dashboard: 
+
 Clustering: 
 
 ## Descriptions of Code Files
