@@ -33,23 +33,23 @@ And then you are good to go to get started!
 ### Please run the requirements files for each of the notebooks.
 Example: 
 
-ACLU Python Part 1: 
+ACLU Project Part1 Combine Data.ipynb (ACLU Python Part 1): 
 ```
 pip install -r part_1requirements.txt
 ```
-ACLU Python Part 2: 
+ACLU Project Part2Transform Data.ipynb (ACLU Python Part 2): 
 ```
 pip install -r part_2requirements.txt
 ```
-ACLU Dashbaord 1: 
+Data Prep Anupriya Dashboard.ipynb (ACLU Dashbaord 1): 
 ```
 pip install -r dashboard_requirements.txt
 ```
-ACLU Spark: 
+ACL U Project Part1b Combine Data Spark.ipynb (ACLU Spark): 
 ```
 'pip install -r spark_requirements.txt'
 ```
-ACLU Spark Dashboard: 
+Anupriya Dashboard Spark2.ipynb (ACLU Spark Dashboard): 
 ```
 'pip install -r spark_dashboard_requirements.txt'
 ```
