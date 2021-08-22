@@ -54,7 +54,7 @@ Clustering:
 ## Descriptions of Code Files
 We wanted to include some of our earlier renditions of our code and how we got started. We began with using pandas to transform our raw files but quickly realized that it was extremely time consuming due to the size of our files. We started with pandas so that we could at least start building visualizations for the dashboard, we were then able to determine the level of aggregation that would be needed to create our visualizations. We started saving these dataframes as smaller files to increase performance. Lastly, we then took everything to Spark which allowed us to handle our datasets without constantly crashing in Collab. Thus, you will find our first renditions of the dashboard via pandas and then our final version using Spark. 
 
-### Python Part 1
+### Python Part 1 (ONLY FOR VIEWING)
 #### In this notebook we are loading in all 25 of the files and using the file names to determine the method of outreach. We have text, mail, phone, call, and postcards. Text is it's own category, but mail and postcards were clubbed into one grouping of "mail". Phone and call were also grouped into one grouping of "call". This was to avoid confusion and create simplicity of three methods of outreach as opposed to 5 in which 2 groupings were pretty much the same. 
 
 The main outputs of this file would be: 
@@ -62,7 +62,7 @@ The main outputs of this file would be:
 2. dfOutreach --> all outreach data so communication type, for which campaign, with the primary key of the Voter File VANID. 
 3. dfMerged --> all election data with the primary key of Voter File VANID
 
-### Python Part 2
+### Python Part 2 (ONLY FOR VIEWING)
 #### This notebook is primarily manipulating our output of dfMerged to a file we called dfReshapedUnique, which is a row-based view of all the election data. It creates the view of Voter File VANID, Election Type, Year, and Participation. The primary key is Voter File VANID but as you can tell, there will be multiple rows for each unique voter depending on election and year they have voted in. In terms of the participation column we have A for Absentee ballot, P for Polls (if there is a D or R, that is specifying which party they voted during the primary), Y for Yes indicating that they voted, but we don’t have data on how they voted (in person vs. absentee), and lastly M this one we tried to get more information on but are not entirely sure, the most wegot was that this probably means they voted in a Municipal election. 
 
 Input: 
@@ -70,7 +70,7 @@ dfMerged --> all election data with the primary key of Voter File VANID
 Output: 
 dfReshapedUnique --> dataframe of how each voter we have reached out to in the 3 campaigns has voted throughout time. same as dfMerged just more user friendly
 
-### Python Dashboard
+### Python Dashboard (ONLY FOR VIEWING)
 #### Here we are using our four files (dfVoters, dfOutreach, dfMerged, and dfReshapedUnique) to create various visualizations. Before we create our plotly dash, we have created each dataframe and outputted the data into a csv file to be able to delete our larger input files and conserve memory & RAM. We also leveraged ngrok to create our plotly dash in collab. 
 
 ### Spark Combine Files 
