@@ -66,7 +66,7 @@ pip install -r waffle_requirements.txt
 We wanted to include some of our earlier renditions of our code and how we got started. We began with using pandas to transform our raw files but quickly realized that it was extremely time consuming due to the size of our files. We started with pandas so that we could at least start building visualizations for the dashboard, we were then able to determine the level of aggregation that would be needed to create our visualizations. We started saving these dataframes as smaller files to increase performance. Lastly, we then took everything to Spark which allowed us to handle our datasets without constantly crashing in Collab. Thus, you will find our first renditions of the dashboard via pandas and then our final version using Spark. 
 
 ### Python Part 1 (HISTORICAL - View Only)
-#### In this notebook we are loading in all 25 of the files and using the file names to determine the method of outreach. We have text, mail, phone, call, and postcards. Text is it's own category, but mail and postcards were clubbed into one grouping of "mail". Phone and call were also grouped into one grouping of "call". This was to avoid confusion and create simplicity of three methods of outreach as opposed to 5 in which 2 groupings were pretty much the same. 
+#### In this notebook we are loading in all 25 of the files and using the file names to determine the method of outreach & campaign. This is the basis of all analysis conducted ahead. 
 
 The main outputs of this file would be: 
 1. dfVoters --> all demographic and location data of the voters with the primary key of the Voter File VANID. 
