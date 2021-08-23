@@ -3,6 +3,9 @@
 ## Background & Purpose
 ### The American Civil Liberties Union of Michigan was established in 1959 to defend civil liberties for every person in the United States. Although their advocacy work spans multiple issues, one of their primary focuses is defending the right to vote. The organization educates Michiganders about their voting rights, encourages them to get involved in the democratic process, and ensures an equal and easy right to vote for every citizen. For our capstone project, we produced an “engagement dashboard” for the ACLU-MI to help them build out their advocacy strategy around voting rights. This dashboard tracks the habits of Michigan voters, volunteer engagement with campaigns, success of initiatives, and more. We also mapped out the locations of voters contacted by the ACLU-MI to help the organization understand who they are and aren’t reaching. The audience of the dashboard includes donors and ACLU-MI employees.
 
+Before we begin, feel free to explore the live dashboard.
+A live version of the Dashboard is available here: https://bin011000110.pythonanywhere.com/
+
 ## Getting Started
 ### We will start by creating a parent folder called "ACLU". We then create 3 folder paths:
 1. "ACLUData" --> 25 files on 3 outreach campaigns
@@ -24,7 +27,9 @@ You will need to download all of these .csv files and save them to the folder ca
 #### This folder path will be empty until you run the code. 
 
 ### Insert Path 
-#### You can open the workbooks in Collab, we created a parent folder called "ACLU" to house "WorkingFiles" and "AdditionalFiles" folders. You will need to add your path as shown in the screenshot below: 
+#### These notebooks were designed to work in Google Collab using Google Drive as a back end storage account. Within your google Drive, we expect a working directory of "Projects/ACLU/" in which will need the two additional folders, "WorkingFiles" and "AdditionalFiles". You will then need to copy the data files from this Github project to the respective folders in this structure.
+
+If you experance any issues configuring this, may need to add your path as shown in the screenshot below: 
 <img width="1019" alt="Screen Shot 2021-08-21 at 9 08 32 AM" src="https://user-images.githubusercontent.com/73508641/130322824-8d9519b8-1eac-41f9-b2ab-aa5eace92d97.png">
 
 And then you are good to go to get started!
