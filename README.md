@@ -19,12 +19,13 @@ A live version of the Dashboard is available here: https://bin011000110.pythonan
 3. Statewide voting rights/voter education race (lpv)
 
 You will need to download all of these .csv files and save them to the folder called "ACLUData". 
+Note: We have removed a lot of the PII columns for privacy reasons.
 
 ### AdditionalData
 #### Next, we have a couple of various external data sources that helped us with this analysis such as geojson files of Michigan, and all registered voters in the state of Michigan by county. These will need to be saved to a folder called "AdditionalFiles". 
 
 ### WorkingFiles
-#### This folder path will be empty until you run the code. 
+#### This folder path will be empty until you run the code. We have provided a few samples of our Working Files for viewing, with PII data scrubbed or aggregated views. 
 
 ### Insert Path 
 #### These notebooks were designed to work in Google Collab using Google Drive as a back end storage account. Within your google Drive, we expect a working directory of "Projects/ACLU/" in which will need the two additional folders, "WorkingFiles" and "AdditionalFiles". You will then need to copy the data files from this Github project to the respective folders in this structure.
